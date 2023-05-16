@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./pictures/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>HoopMetrics | Team Stats</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/team.css" />
+    <script src="./js/data.js"></script>
+  </head>
+  <body id="body">
+    <section class="landing-page">
+      <header style="animation: search-bar-animation 1.5s ease-in-out both">
+        <div class="header-top">
+          <h1>HoopMetrics</h1>
+          <input type="checkbox" name="" class="nav-toggle" id="nav-toggle" />
+          <nav>
+            <ul>
+              <li><a href="#">Team Stats</a></li>
+              <li><a href="./html/bracket.html">Playoff Bracket</a></li>
+              <li><a href="./html/matches.html">Recent Matches</a></li>
+            </ul>
+          </nav>
+
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
+        </div>
+        <div class="header-bottom">
+          <input type="text" id="searchBar" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              fill="#FFFFFF"
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </div>
+      </header>
+      <div class="website-logo" style="animation: logo-animation 3s ease-in-out both">
+        <img src="./pictures/logo-w-text.png" alt="website-logo" draggable="false" />
+        <h1>Quick access to stats about your favorite NBA Team</h1>
+      </div>
+      <div class="observer-root">
+        <div
+          class="slider"
+          data-mouse-down-at="0"
+          data-prev-percentage="0"
+          style="animation: slider-animation 3.5s ease-in-out both"
+        >
+          <img src="./pictures/atlanta.jpg" alt="atlanta hawks" draggable="false" data-order="1" data-color="E03A3E" />
+          <img src="./pictures/boston.jpg" alt="boston celtics" draggable="false" data-order="2" data-color="008348" />
+          <img src="./pictures/brooklyn.jpg" alt="brooklyn nets" draggable="false" data-order="3" data-color="111111" />
+          <img
+            src="./pictures/charlotte.jpg"
+            alt="charlotte hornets"
+            draggable="false"
+            data-order="4"
+            data-color="1D1160"
+          />
+          <img src="./pictures/chicago.jpg" alt="chicago bulls" draggable="false" data-order="5" data-color="CD1F43" />
+          <img
+            src="./pictures/cleveland.jpg"
+            alt="cleveland cavaliers"
+            draggable="false"
+            data-order="6"
+            data-color="860038"
+          />
+          <img
+            src="./pictures/Dallas.jpg"
+            alt="dallas mavericks"
+            draggable="false"
+            data-order="7"
+            data-color="0064B1"
+          />
+          <img src="./pictures/denver.jpg" alt="denver nuggets" draggable="false" data-order="8" data-color="0D2240" />
+          <img
+            src="./pictures/detroit.jpg"
+            alt="detroit pistons"
+            draggable="false"
+            data-order="9"
+            data-color="C8102E"
+          />
+          <img
+            src="./pictures/goldenstate.jpg"
+            alt="golden state warriors"
+            draggable="false"
+            data-order="10"
+            data-color="1D428A"
+          />
+          <img
+            src="./pictures/houston.jpg"
+            alt="houston rockets"
+            draggable="false"
+            data-order="11"
+            data-color="111111"
+          />
+          <img
+            src="./pictures/indiana.jpg"
+            alt="indiana pacers"
+            draggable="false"
+            data-order="12"
+            data-color="002D62"
+          />
+          <img
+            src="./pictures/LAC.jpg"
+            alt="los angeles clippers"
+            draggable="false"
+            data-order="13"
+            data-color="1D428A"
+          />
+          <img
+            src="./pictures/LAL.jpg"
+            alt="los angeles lakers"
+            draggable="false"
+            data-order="14"
+            data-color="5F3989"
+          />
+          <img
+            src="./pictures/memphis.jpg"
+            alt="memphis grizzlies"
+            draggable="false"
+            data-order="15"
+            data-color="5D76A9"
+          />
+          <img src="./pictures/miami.jpg" alt="miami heat" draggable="false" data-order="16" data-color="961A31" />
+          <img
+            src="./pictures/milwaukee.jpg"
+            alt="milwaukee bucks"
+            draggable="false"
+            data-order="17"
+            data-color="00471A"
+          />
+          <img
+            src="./pictures/minnesota.jpg"
+            alt="minnesota timberwolves"
+            draggable="false"
+            data-order="18"
+            data-color="266092"
+          />
+          <img
+            src="./pictures/neworleans.jpg"
+            alt="new orleans pelicans"
+            draggable="false"
+            data-order="19"
+            data-color="B4975A"
+          />
+          <img
+            src="./pictures/newyork.jpg"
+            alt="new york knicks"
+            draggable="false"
+            data-order="20"
+            data-color="F58426"
+          />
+          <img
+            src="./pictures/oklahoma.jpg"
+            alt="oklahoma city thunder"
+            draggable="false"
+            data-order="21"
+            data-color="057DC1"
+          />
+          <img src="./pictures/orlando.jpg" alt="orlando magic" draggable="false" data-order="22" data-color="0B77BD" />
+          <img
+            src="./pictures/philadelpia.jpg"
+            alt="philadelpia 76ers"
+            draggable="false"
+            data-order="23"
+            data-color="2D55BE"
+          />
+          <img src="./pictures/phoenix.jpg" alt="phoenix suns" draggable="false" data-order="24" data-color="5F3989" />
+          <img
+            src="./pictures/portland.jpg"
+            alt="portland trail blazers"
+            draggable="false"
+            data-order="25"
+            data-color="CF0A2C"
+          />
+          <img
+            src="./pictures/sacramento.jpg"
+            alt="sacramento kings"
+            draggable="false"
+            data-order="26"
+            data-color="592D81"
+          />
+          <img
+            src="./pictures/sanantonio.jpg"
+            alt="san-antonio spurs"
+            draggable="false"
+            data-order="27"
+            data-color="C2CCD2"
+          />
+          <img
+            src="./pictures/toronto.jpg"
+            alt="toronto raptors"
+            draggable="false"
+            data-order="28"
+            data-color="111111"
+          />
+          <img src="./pictures/utah.jpg" alt="utah jazz" draggable="false" data-order="29" data-color="1E4C79" />
+          <img
+            src="./pictures/washington.jpg"
+            alt="washington wizards"
+            draggable="false"
+            data-order="30"
+            data-color="002B5C"
+          />
+        </div>
+      </div>
+      <a class="back-to-top" href="#body" style="display: none">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            />
+          </svg>
+        </button>
+      </a>
+      <footer id="footer" style="animation: footer-animation 1.5s ease-in-out both">
+        <p id="footerNumber" class="footer-number">1 — 30</p>
+        <div class="footer-info">
+          <p class="site-name">HoopMetrics</p>
+          <ul>
+            <li><a href="" target="_blank" id="gmailLink">Gmail</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+          </ul>
+          <p>&copy;2023 Riandrei Casañas</p>
+        </div>
+      </footer>
+    </section>
+    <section style="display: none; opacity: 0" class="team-page">
+      <div class="team-header">
+        <button>
+          <span>Go Back</span>
+        </button>
+        <h1 class="team-name"></h1>
+        <button class="back-button">
+          <span>Go Back</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="team-stats">
+          <div class="upper-team-stats">
+            <img id="teamLogo" src="" alt="" />
+            <div class="season-record">
+              <p id="seasonRecord"></p>
+            </div>
+            <div class="season-standing">
+              <p id="seasonStanding"></p>
+              <p id="seasonStandingConference"></p>
+            </div>
+          </div>
+          <div class="lower-team-stats">
+            <div class="team-season-points">
+              <p id="teamPoints"></p>
+              <p>PTS</p>
+            </div>
+            <div class="team-season-assists">
+              <p id="teamAssists"></p>
+              <p>AST</p>
+            </div>
+            <div class="team-season-rebounds">
+              <p id="teamRebounds"></p>
+              <p>REB</p>
+            </div>
+            <div class="team-season-steals">
+              <p id="teamSteals"></p>
+              <p>STL</p>
+            </div>
+            <div class="team-season-blocks">
+              <p id="teamBlocks"></p>
+              <p>BLK</p>
+            </div>
+            <div class="team-season-fgp">
+              <p id="teamFgp"></p>
+              <p>%</p>
+            </div>
+          </div>
+        </div>
+        <div class="team-accolades">
+          <div class="accolades-left">
+            <p id="teamChampionships"></p>
+            <p>CHAMPIONSHIPS</p>
+          </div>
+          <div class="accolades-right">
+            <div class="cchampionships">
+              <p id="teamCChampionships"></p>
+              <p>CONFERENCE CHAMPIONSHIPS</p>
+            </div>
+            <div class="accolades-right-bottom">
+              <div class="division">
+                <p id="teamDivisions"></p>
+                <p>DIVISION</p>
+              </div>
+              <div class="playoffs">
+                <p id="teamPlayoffs"></p>
+                <p>PLAYOFFS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-players">
+          <ul class="player-slider" id="player-list"></ul>
+        </div>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
